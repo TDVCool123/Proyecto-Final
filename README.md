@@ -6,7 +6,7 @@
 ## Requisitos:
 
 - Visual Studio Code
-- C++ 13.4*
+- C++ 5.11
 
 
 ## Proceso de instalacion
