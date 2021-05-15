@@ -32,6 +32,31 @@ char Laberinto2[LaberintoAltura][LaberintoAncho + 1] =
 "####### #",
 };
 
+char Laberinto3[LaberintoAltura][LaberintoAncho + 1] =
+{
+"#   #####",
+"###    #",
+"# ### # #",
+"# #   # #",
+"# #   ###",
+"#   # # #",
+"# ### # #",
+"#   #   #",
+"####### #",
+};
+
+char Laberinto4[LaberintoAltura][LaberintoAncho + 1] =
+{
+"#   #####",
+"##      #",
+"#  ## # #",
+"##   ####",
+"#### ####",
+"#  #  # #",
+"# ### # #",
+"#   #   #",
+"####### #",
+};
 
 const char Pared = '#';
 const char Abierto = ' ';
@@ -111,8 +136,25 @@ int main() {
     }
     else
     {
-        printf("No Ahi solucion\n");
+        printf("No hay solucion\n");
     }
 
+    if (Solve(LugarDeEmpiezo.X, LugarDeEmpiezo.Y, Laberinto3))
+    {
+        PrintDaLaberinto(Laberinto3);
+    }
+    else
+    {
+        printf("No hay solucion\n");
+    }
+
+    if (Solve(LugarDeEmpiezo.X, LugarDeEmpiezo.Y, Laberinto4))
+    {
+        PrintDaLaberinto(Laberinto4);
+    }
+    else
+    {
+        printf("No hay solucion\n");
+    }
     return 0;
 }
